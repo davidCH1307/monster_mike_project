@@ -1,9 +1,9 @@
 import React, { Jokes, useState }from 'react';
 import axios from 'axios';
 
-const Jokes = () => {
+const JokeButton = () => {
 
-    const[joke, setJoke] = useState("")
+    const[Jokes, setJoke] = useState("")
     Jokes(() => {
         const fetchData = async () => {
             const result = await axios ("https://us-central1-dadsofunny.cloudfunctions.net/DadJokes/random/type/general")
