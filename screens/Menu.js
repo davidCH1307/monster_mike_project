@@ -8,7 +8,7 @@ export default function NEWSCREEN({ navigation }){
     }
 
     const pressHandler2 = () => {
-        navigation.navigate('NewScreen');
+        navigation.navigate('Rock_Paper_Scissors_Game');
     }
 
     const pressHandler3 = () => {
