@@ -2,6 +2,8 @@ import React from "react";
 import scissors from "../assets/scissors1.png";
 import paper from "../assets/paper1.png";
 import rock from "../assets/rock1.png";
+import lizard from "../assets/lizard.png";
+import spock from "../assets/spock.jpg";
 
 import {View, Image, StyleSheet,Dimensions} from "react-native";
 const Player = ({ weapon }) => (
@@ -10,7 +12,7 @@ const Player = ({ weapon }) => (
       <Image style={styles.RPS}
         className="player-image"
         source={
-          weapon === "rock" ? rock : weapon === "scissors" ? scissors : paper
+          weapon === "rock" ? rock : weapon === "scissors" ? scissors : weapon === "lizard" ? lizard : weapon === "spock" ? spock : paper
         }
         alt="Rock Paper Scissors" 
          resizeMode ="contain" crop= "scale"
